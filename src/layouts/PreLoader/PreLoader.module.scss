@@ -1,0 +1,44 @@
+@import "../../styleguide.scss";
+.preLoader{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #fff;
+
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    overflow: hidden;
+    height: pxToVw(100, 1920);
+    transform: scale(0);
+
+    img{
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.overlay{
+    background-color: $color-green;
+    width: 100vw;
+    height: 0vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.circle{
+    position: absolute;
+    background-color: #fff;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+
+    transform: scale(0);
+}

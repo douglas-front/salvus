@@ -1,0 +1,24 @@
+// Definindo a função pxToVw
+*{
+  font-family: "Montserrat";
+}
+
+$color-green: #014921;
+
+@function pxToVw($px, $viewport) {
+  @return calc($px / $viewport * 100vw);
+}
+
+section {
+  padding-inline: pxToVw(25, 1920);
+}
+
+html{
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,40 @@
+@import "../../styleguide.scss";
+
+.footer{
+    position: relative;
+    width: 100vw;
+    height: pxToVw(667,1920);
+    background-color: $color-green;
+
+}
+
+.sitemap{
+    margin-top: pxToVw(49,1920);
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;   
+    margin-left: pxToVw(125,1920);
+
+    h2{
+        color: #fff;
+        font-size: pxToVw(64, 1920);
+        text-transform: uppercase;
+    }
+
+    p,
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1vw;
+    }
+}
+
+.title{
+    position: absolute;
+    bottom: -5vw;
+    right: pxToVw(50, 1920);
+    font-size: pxToVw(300, 1920);
+    text-transform: uppercase;
+    color: #9F9F9F;
+}

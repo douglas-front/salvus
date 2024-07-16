@@ -1,0 +1,22 @@
+@import "../../styleguide.scss";
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-inline: pxToVw(25, 1920);
+
+  z-index: 99;
+}
+.menu{
+    margin-top: 2vw;
+    display: flex;
+    gap: 3vw;
+}
+.management{
+    cursor: pointer;
+    font-size: 1vw;
+}

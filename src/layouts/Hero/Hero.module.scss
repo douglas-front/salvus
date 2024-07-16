@@ -1,0 +1,39 @@
+@import "../../styleguide.scss";
+
+.image{
+    position: relative;
+    width: 0;
+    height: pxToVw(800, 1920);
+    margin-top: pxToVw(301, 1920);
+    overflow: hidden;
+
+    img{
+        position: absolute;
+        width: 100vw;
+    }
+}
+.title{
+    overflow: hidden;
+    font-size: pxToVw(300, 1920);
+    position: absolute;
+    top: pxToVw(50, 1920);
+    left: 1vw;
+    color: #9F9F9F;
+    z-index: -1;
+}
+
+.paragraph{
+    overflow: hidden;
+    color: $color-green;
+    position: absolute;
+    top: pxToVw(230, 1920);
+    right: 2vw;
+
+    font-size: pxToVw(26, 1920);
+}
+
+.paragraph span,
+.title span{
+    display: block;
+    transform: translateY(100%);
+}
