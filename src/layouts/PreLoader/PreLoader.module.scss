@@ -42,3 +42,16 @@
 
     transform: scale(0);
 }
+
+@media screen and (max-width: 820px) {
+    .logo{
+        overflow: hidden;
+        height: 10vw;
+        transform: scale(0);
+    
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}

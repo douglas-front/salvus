@@ -1,0 +1,22 @@
+.container{
+  overflow: initial;
+}
+.products {
+  opacity: 0;
+  padding-top: 10vw;
+  min-height: 100vh;
+}
+
+.wrapper {
+  overflow: initial;
+  white-space: nowrap;
+
+  cursor: grab;
+
+}
+
+@media screen and (max-width: 820px) {
+  .products{
+    min-height: 100vw;
+  }
+}

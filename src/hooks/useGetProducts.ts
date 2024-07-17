@@ -19,11 +19,11 @@ export default function useGetProducts() {
 
     (async () => {
       try {
-        const reqApi = await fetch("https://api-salvus.vercel.app/product", {
+        const req = await fetch("https://api-salvus.vercel.app/product", {
           signal,
         })
 
-        const jsonApi = await reqApi.json()
+        const jsonApi = await req.json()
 
         setProducts(jsonApi)
       } catch (error) {

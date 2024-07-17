@@ -64,7 +64,6 @@ export default class DragScroll {
     GSAP.utils
       .toArray<HTMLElement>(this._items)
       .forEach((item) => {
-       
         this.wrapWidth += item.clientWidth + 10
       })
 

@@ -1,0 +1,55 @@
+@import "../../styleguide.scss";
+.card {
+  overflow: initial;
+ position: relative;
+
+ display: inline-block;
+
+ padding: 0.2vw;
+
+ width: pxToVw(565,1920);
+ height: pxToVw(706,1920);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  position: absolute;
+  bottom: -1vw;
+  z-index: 99;
+
+  small{
+    font-size: 0.7vw;
+  }
+}
+
+
+@media screen and (max-width: 820px){
+  .card {
+  
+   padding: 0.2vw;
+  
+   width: 45vw;
+   height: 65vw;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    position: absolute;
+    bottom: -5vw;
+    z-index: 99;
+  
+    small{
+      font-size: 3vw;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../../../styleguide.scss";
+.PostSection{
+  padding-bottom: 5vw;
+
+}
+
+.title{
+    font-size: pxToVw(300, 1920);
+    text-transform: uppercase;
+    color: #9F9F9F;
+}

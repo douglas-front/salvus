@@ -37,3 +37,33 @@
     display: block;
     transform: translateY(100%);
 }
+
+
+@media screen and (max-width: 820px) {
+    .title{
+        font-size: 17vw;
+        position: initial;
+        margin-top: 10vw;
+    }
+
+    .paragraph{
+        overflow: hidden;
+        color: $color-green;
+        position: initial;    
+        font-size: 4.5vw;
+    }
+    .image{
+        position: relative;
+        width: 0;
+        height: 60vw;
+        margin-top: 0;
+        overflow: hidden;
+    
+        img{
+            position: absolute;
+            width: 100vw;
+            height: 60vw;
+            object-fit: cover;
+        }
+    }
+}

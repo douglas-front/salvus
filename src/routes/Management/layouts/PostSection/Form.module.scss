@@ -1,0 +1,87 @@
+@import "../../../../styleguide.scss";
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  width: pxToVw(731, 1920);
+
+
+  label {
+    font-size: pxToVw(20, 1920);
+    font-weight: 500;
+  }
+
+  
+  input {
+    height: pxToVw(67, 1920);
+    background-color: #9F9F9F;
+    border: none;
+    outline: none;
+    border-radius: pxToVw(10, 1920);
+    padding-inline: 2vw;
+  }
+
+  textarea{
+    background-color: #9F9F9F;
+    border: none;
+    outline: none;
+    border-radius: pxToVw(10, 1920);
+    padding: 2vw;
+    height: pxToVw(264, 1920);
+
+    resize: none;
+  }
+}
+
+.price{
+  width: pxToVw(189, 1920);
+}
+
+.send{
+    cursor: pointer;
+    background-color: #9F9F9F;
+    
+    padding: 1vw 3vw;
+    border: none;
+
+    margin-top: 2vw;
+    border-radius: pxToVw(10, 1920);
+
+}
+
+@media screen and (max-width: 820px) {
+  .formWrapper {
+    width: 90vw;
+  
+  
+    label {
+      font-size: 4vw;
+    }
+  
+    
+    input {
+      height: 10vw;
+      border-radius: 5vw;
+      padding-inline: 3vw;
+    }
+  
+    textarea{
+      border-radius: 5vw;
+      padding: 3vw;
+      height: 40vw;
+  
+    }
+  }
+  .price{
+    width: 40vw;
+  }
+  .send{
+    
+    padding: 3vw 13vw;
+    border: none;
+
+    margin-top: 10vw;
+    border-radius:5vw;
+
+}
+}
