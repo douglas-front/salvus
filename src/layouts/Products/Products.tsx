@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Products.module.scss";
 import Slide from "../../components/Slide/Slide";
 import ProductCard from "./ProductCard";

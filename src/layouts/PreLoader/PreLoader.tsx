@@ -1,5 +1,4 @@
 import useIsomorphicEffect from "../../hooks/useIsomorphicEffect"
-import useLenisScroll from "../../hooks/useLenisScroll"
 import animationCircle from "./animations/animationCircle"
 import animationLogo from "./animations/animationLogo"
 import animationMain from "./animations/animationMain"

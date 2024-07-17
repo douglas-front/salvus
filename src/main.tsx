@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import './styleguide.scss'
-import Providers from './contexts/Providers.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Management from './routes/Management'
 
