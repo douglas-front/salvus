@@ -8,11 +8,11 @@ import Management from './routes/Management'
 
 const router = createBrowserRouter([
   {
-    path: "/salvus-xi.vercel.app",
+    path: "/",
     element: <App/>
   },
   {
-    path: "/salvus-xi.vercel.app/management",
+    path: "/management",
     element: <Management/>
   }
 ])
