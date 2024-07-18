@@ -1,25 +1,23 @@
 @import "../../../../styleguide.scss";
 
-.form{
+.form {
   float: right;
-    padding-top: 5vw;
-    z-index: 99;
+  padding-top: 5vw;
+  z-index: 99;
 }
 .formWrapper {
   display: flex;
   flex-direction: column;
   width: pxToVw(731, 1920);
 
-
   label {
     font-size: pxToVw(20, 1920);
     font-weight: 500;
   }
 
-  
   input {
     height: pxToVw(67, 1920);
-    background-color: #9F9F9F;
+    background-color: #9f9f9f;
     border: none;
     outline: none;
     border-radius: pxToVw(10, 1920);
@@ -28,8 +26,8 @@
     z-index: 999;
   }
 
-  textarea{
-    background-color: #9F9F9F;
+  textarea {
+    background-color: #9f9f9f;
     border: none;
     outline: none;
     border-radius: pxToVw(10, 1920);
@@ -40,60 +38,54 @@
   }
 }
 
-.price{
+.price {
   width: pxToVw(189, 1920);
 }
 
-.send{
-    cursor: pointer;
-    background-color: #9F9F9F;
-    
-    padding: 1vw 3vw;
-    border: none;
+.send {
+  cursor: pointer;
+  background-color: #9f9f9f;
 
-    margin-top: 2vw;
-    border-radius: pxToVw(10, 1920);
+  padding: 1vw 3vw;
+  border: none;
 
+  margin-top: 2vw;
+  border-radius: pxToVw(10, 1920);
 }
 
 @media screen and (max-width: 820px) {
-  .form{
+  .form {
     float: left;
     margin-top: 15vw;
     margin-bottom: 25vw;
   }
   .formWrapper {
     width: 90vw;
-  
-  
+
     label {
       font-size: 4vw;
     }
-  
-    
+
     input {
       height: 10vw;
       border-radius: 5vw;
       padding-inline: 3vw;
     }
-  
-    textarea{
+
+    textarea {
       border-radius: 5vw;
       padding: 3vw;
       height: 40vw;
-  
     }
   }
-  .price{
+  .price {
     width: 40vw;
   }
-  .send{
-    
+  .send {
     padding: 3vw 13vw;
     border: none;
 
     margin-top: 10vw;
-    border-radius:5vw;
-
-}
+    border-radius: 5vw;
+  }
 }

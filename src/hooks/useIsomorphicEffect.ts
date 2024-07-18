@@ -1,8 +1,7 @@
-import { useEffect, useLayoutEffect } from "react"
+import { useEffect, useLayoutEffect } from "react";
 
-const isServerRendering = typeof window === "undefined"
+const isServerRendering = typeof window === "undefined";
 
-const useIsomorphicEffect
-  = isServerRendering ? useLayoutEffect : useEffect
+const useIsomorphicEffect = isServerRendering ? useLayoutEffect : useEffect;
 
-export default useIsomorphicEffect
+export default useIsomorphicEffect;

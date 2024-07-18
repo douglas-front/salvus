@@ -39,70 +39,65 @@
   display: flex;
   justify-content: space-between;
 
-
-  button{
-
-
+  button {
     cursor: pointer;
     padding: 1vw;
     border-radius: 3vw;
     border: none;
     background-color: $color-green;
     color: #fff;
-    transition: all .2s ease;
-    
-    &:hover{
+    transition: all 0.2s ease;
+
+    &:hover {
       transform: scale(1.1);
     }
   }
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) {
   .card {
-  
-   padding: 0.7vw;
-  
-   width: 45vw;
-   height: 65vw;
+    padding: 0.7vw;
+
+    width: 45vw;
+    height: 65vw;
   }
 
-  .info{
+  .info {
     display: flex;
     justify-content: space-around;
     width: 98%;
     position: absolute;
     bottom: -5vw;
     z-index: 99;
-  
-    small{
+
+    small {
       font-size: 3vw;
     }
   }
 
   .buttons {
-  overflow: initial;
-  position: absolute;
-  top: 1vw;
-  padding-inline: 2vw;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    overflow: initial;
+    position: absolute;
+    top: 1vw;
+    padding-inline: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 
-  z-index: 999;
+    z-index: 999;
 
-  button{
-    cursor: pointer;
-    padding: 3vw 2vw;
-    border-radius: 5vw;
-    border: none;
-    background-color: $color-green;
-    color: #fff;
-    transition: all .2s ease;
-    
-    &:hover{
-      transform: scale(1.1);
+    button {
+      cursor: pointer;
+      padding: 3vw 2vw;
+      border-radius: 5vw;
+      border: none;
+      background-color: $color-green;
+      color: #fff;
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
-}
-

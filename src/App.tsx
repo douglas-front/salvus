@@ -1,4 +1,3 @@
-
 import Hero from "./layouts/Hero";
 import PreLoader from "./layouts/PreLoader/PreLoader";
 import Products from "./layouts/Products";
@@ -9,16 +8,15 @@ import Providers from "./contexts/Providers";
 function App() {
   return (
     <>
-    <Providers>
-
-    <PreLoader/>
-      <main>
-      <Nav menuOption="Management" link="management"/>
-        <Hero />
-        <Products/>
-        <Footer/>
-      </main>
-    </Providers>
+      <Providers>
+        <PreLoader />
+        <main>
+          <Nav menuOption="Management" link="management" />
+          <Hero />
+          <Products />
+          <Footer />
+        </main>
+      </Providers>
     </>
   );
 }

@@ -1,25 +1,24 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Products.module.scss";
 import ProductCard from "./ProductCard";
 import useGetProducts from "../../../../hooks/useGetProducts";
 import Slide from "../../../../components/Slide/Slide";
 import FormEdit from "../Modal/FormEdit";
 
-interface IProductEdit{
-  id: number,
-  name: string
+interface IProductEdit {
+  id: number;
+  name: string;
 }
 
 export default function Products() {
   const products = useGetProducts();
-  const [productImages, setProductImages] = useState<{ [key: number]: string }>({});
-  const [selectedProductId, setSelectedProductId] = useState<IProductEdit | null>(null);
+  const [productImages, setProductImages] = useState<{ [key: number]: string }>(
+    {}
+  );
+  const [selectedProductId, setSelectedProductId] =
+    useState<IProductEdit | null>(null);
 
-  const images = [
-    "/bag2.jpg",
-    "/bag3.jpg",
-    "/bag4.jpg"
-  ];
+  const images = ["/bag2.jpg", "/bag3.jpg", "/bag4.jpg"];
 
   function sortImage() {
     const aleatoryIndex = Math.floor(Math.random() * images.length);
@@ -34,8 +33,8 @@ export default function Products() {
     setProductImages(imagesMap);
   }, [products]);
 
-  const openEditModal = ({id, name}: IProductEdit) => {
-    setSelectedProductId({id: id, name: name});
+  const openEditModal = ({ id, name }: IProductEdit) => {
+    setSelectedProductId({ id: id, name: name });
   };
 
   return (
@@ -49,12 +48,14 @@ export default function Products() {
             key={`product ${item.id}`}
             image={productImages[item.id]}
             id={item.id}
-            onClickEdit={() => openEditModal({id: item.id, name: item.productname}) }
+            onClickEdit={() =>
+              openEditModal({ id: item.id, name: item.productname })
+            }
           />
         ))}
       </div>
       {selectedProductId !== null && (
-        <FormEdit  id={selectedProductId.id} name={selectedProductId.name} />
+        <FormEdit id={selectedProductId.id} name={selectedProductId.name} />
       )}
     </section>
   );

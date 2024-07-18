@@ -1,5 +1,4 @@
-
-.products{
+.products {
   padding-top: 10vw;
   min-height: 100vh;
 }
@@ -9,11 +8,10 @@
   white-space: nowrap;
 
   cursor: grab;
-
 }
 
 @media screen and (max-width: 820px) {
-  .products{
+  .products {
     min-height: 100vw;
   }
 }

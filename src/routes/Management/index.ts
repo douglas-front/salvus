@@ -1,1 +1,1 @@
-export {default} from "./Management"
+export { default } from "./Management";

@@ -1,1 +1,1 @@
-export {default} from "./PostSection"
+export { default } from "./PostSection";

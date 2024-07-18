@@ -1,5 +1,5 @@
 // Definindo a função pxToVw
-*{
+* {
   font-family: "Montserrat";
 }
 
@@ -13,7 +13,7 @@ section {
   padding-inline: pxToVw(25, 1920);
 }
 
-html{
+html {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }

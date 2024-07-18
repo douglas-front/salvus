@@ -1,65 +1,64 @@
 @import "../../styleguide.scss";
 
-.footer{
-    position: relative;
-    width: 100vw;
-    height: pxToVw(667,1920);
-    background-color: $color-green;
-
+.footer {
+  position: relative;
+  width: 100vw;
+  height: pxToVw(667, 1920);
+  background-color: $color-green;
 }
 
-.sitemap{
-    margin-top: pxToVw(49,1920);
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;   
-    margin-left: pxToVw(125,1920);
+.sitemap {
+  margin-top: pxToVw(49, 1920);
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  margin-left: pxToVw(125, 1920);
 
-    h2{
-        color: #fff;
-        font-size: pxToVw(64, 1920);
-        text-transform: uppercase;
-    }
-
-    p,
-    a{
-        cursor: pointer;
-        text-decoration: none;
-        color: #fff;
-        font-size: 1vw;
-    }
-}
-
-.title{
-    position: absolute;
-    bottom: -5vw;
-    right: pxToVw(50, 1920);
-    font-size: pxToVw(300, 1920);
+  h2 {
+    color: #fff;
+    font-size: pxToVw(64, 1920);
     text-transform: uppercase;
-    color: #9F9F9F;
+  }
+
+  p,
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+  }
+}
+
+.title {
+  position: absolute;
+  bottom: -5vw;
+  right: pxToVw(50, 1920);
+  font-size: pxToVw(300, 1920);
+  text-transform: uppercase;
+  color: #9f9f9f;
 }
 
 @media screen and (max-width: 820px) {
-    .footer{
-        overflow: hidden;
-        height: 80vw;
+  .footer {
+    overflow: hidden;
+    height: 80vw;
+  }
+  .sitemap {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+
+    h2 {
+      font-size: 10vw;
     }
-    .sitemap{
-        margin-top: 5vw;
-        display: flex;
-        flex-direction: column;
-        gap: 5vw;   
-    
-        h2{
-            font-size: 10vw;
-        }
-    
-        p,
-        a{
-            cursor: pointer;
-            text-decoration: none;
-            color: #fff;
-            font-size: 5vw;
-        }
+
+    p,
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      font-size: 5vw;
     }
+  }
 }
