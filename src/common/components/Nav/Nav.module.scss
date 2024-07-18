@@ -23,11 +23,13 @@
 
 @media screen and (max-width: 820px) {
   .nav {
-    pointer-events: none;
-
     height: 10vw;
+    width: 40vw;
+    right: 0;
+    justify-content: center;
   }
   .menu {
+    list-style: none;
     li {
       font-size: 5vw;
     }
