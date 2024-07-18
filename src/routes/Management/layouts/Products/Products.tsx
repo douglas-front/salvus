@@ -39,7 +39,7 @@ export default function Products() {
   };
 
   return (
-    <section className={styles.adoption} data-slide-element id="products">
+    <section className={styles.products} data-slide-element id="products">
       {products.length >= 1 && <Slide />}
       <div className={styles.wrapper} data-slide-wrapper>
         {products.map((item) => (

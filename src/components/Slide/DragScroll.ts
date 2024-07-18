@@ -93,7 +93,10 @@ export default class DragScroll {
   }
 
   public handleTouchStart(e: MouseEvent | TouchEvent) {
-    e.preventDefault()
+
+    if(!window.matchMedia("(max-width: 820px)").matches){
+      e.preventDefault()
+    }
     this.draggable = true
 
     if (e instanceof TouchEvent) {

@@ -1,5 +1,6 @@
 @import "../../../styleguide.scss";
 .nav {
+  
   position: fixed;
   top: 0;
   width: 100vw;
@@ -9,7 +10,7 @@
   justify-content: end;
   padding-inline: pxToVw(25, 1920);
 
-  z-index: 99;
+  z-index: 1;
 }
 .menu{
     margin-top: 2vw;
@@ -23,6 +24,8 @@
 
 @media screen and (max-width: 820px) {
   .nav{
+  pointer-events: none;
+
     height: 10vw;
   }
   .menu{

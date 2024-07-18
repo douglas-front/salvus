@@ -4,6 +4,10 @@ import Products from "./layouts/Products";
 
 export default function Management() {
 
+    function getId(){
+        
+    }
+
     return (
         <main>
             <Nav menuOption="Home" link=""/>

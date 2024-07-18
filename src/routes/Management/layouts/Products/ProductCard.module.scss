@@ -14,6 +14,7 @@
 .image {
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 .info {
@@ -38,7 +39,10 @@
   display: flex;
   justify-content: space-between;
 
+
   button{
+
+
     cursor: pointer;
     padding: 1vw;
     border-radius: 3vw;
@@ -83,6 +87,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  z-index: 999;
 
   button{
     cursor: pointer;

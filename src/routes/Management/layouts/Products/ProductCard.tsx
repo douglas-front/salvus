@@ -43,13 +43,6 @@ export default function ProductCard({ productname, price, image, id, onClickEdit
 
   return (
     <figure className={styles.card} data-slide-item>
-      <img className={styles.image} src={image} alt="bag image" />
-      
-      <div className={styles.info}>
-        <small>{productname}</small>
-        <small>{price}</small>
-      </div>
-
       <div className={styles.buttons}>
         <button className={styles.button} onClick={deleteProduct} disabled={loading}>
           {loading ? 'Deleting...' : 'Delete'}
@@ -60,6 +53,14 @@ export default function ProductCard({ productname, price, image, id, onClickEdit
           Edit
         </button>
       </div>
+      <img className={styles.image} src={image} alt="bag image" />
+      
+      <div className={styles.info}>
+        <small>{productname}</small>
+        <small>{price}</small>
+      </div>
+
+      
       
       {error && <small className={styles.error}>{error}</small>}
     </figure>
